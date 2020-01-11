@@ -1,0 +1,21 @@
+<div>
+  <header>
+    <div class="header-min">
+        <h1>Личный Кабинет <br /> <br>Инфо Югра</h1>
+    </div>
+    <div class="image"></div>
+  </header>
+</div>
+
+  <form (ngSubmit)="login(loginForm.value)" [formGroup]="loginForm">
+    
+    <h1>Войти</h1>
+    <label for="email"><h2>Email:</h2></label>
+    <input type="email" name="email" formControlName="email">
+  
+    <label for="password"><h2>Пароль:</h2></label>
+    <input type="password" name="password" formControlName="password">
+  
+    <input type="submit" [disabled]="!loginForm.valid" value="Войти">
+  </form> 
+  

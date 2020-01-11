@@ -1,0 +1,16 @@
+<p>home-page works!</p>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<div class="main-container">
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2 style="font-weight: bold;">Инфо Югра</h2>
+            <ul>
+                <li><a [routerLink]="['/home']" routerLinkActive="router-link-active"><h5><i class="fas fa-home" style="margin-right: 10px;"></i>Домой</h5></a></li>
+                <li><a [routerLink]="['/profile']" routerLinkActive="router-link-active"><h5><i class="fas fa-user" style="margin-right: 10px;"></i>Профиль</h5></a></li>
+                <li><a [routerLink]="['/contacts']" routerLinkActive="router-link-active"><h5><i class="fas fa-address-book" style="margin-right: 10px;"></i>Контакты</h5></a></li>
+                <li><a [routerLink]="['/bonuses']" routerLinkActive="router-link-active"  active><h5><i class="fas fa-coins" style="margin-right: 10px;"></i>Бонусы</h5></a></li>
+                <li><a href="" (click)="logout()"><h5><i class="fas fa-sign-out-alt" style="margin-right: 10px;"></i>Выйти</h5></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
